@@ -6,7 +6,7 @@
 }
 
 :root {
-    
+
 }
 
 html {
@@ -15,4 +15,10 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Mobile version start*/
+@media (min-width:300px) {
+    
 }
