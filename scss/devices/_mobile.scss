@@ -1,15 +1,465 @@
 @media (min-width:280px) {
     header {
         height: 60vh;
-        padding: 3%;
 
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        color: white;
+        h1 {
+            width: 60%;
+            font-size: 35px;
+        }
 
-        > nav > ul {
+        > section {
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba($color: #2e2d2d, $alpha: 0.5);
+
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+
+        > section > section {
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+        nav > ul {
             display: none;
         }
+
+        details {
+            position: relative;
+            text-align: right;
+            width: 100%;
+        }
+
+        summary {
+            font-size: 25px;
+            padding: 3%;
+        }
+
+        details > ul {
+            position: absolute;
+            width: 100%;
+        }
+
+        details li {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid white;
+
+
+        }
+
+        details a {
+            width: 100%;
+            padding: 2%;
+            
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+
+        details a:hover{
+            background-color: rgba($color: #c2c1c1, $alpha: 0.8);
+            color: black;
+        }
+        }
     }
+
+    img {
+        width: 100%;
+    }
+
+    .sectiontitle {
+        h2 {
+            text-transform: capitalize;
+            font-size: 35px;
+            font-weight: 400;
+            color: $sectionTitleColor;
+        }
+
+        p {
+            font-weight: 200;
+            line-height: 1.5;
+            width: 95%;
+        }
+    }
+
+    .about {
+        figure {
+            width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        h3 {
+            font-size: 27px;
+            font-weight: 300;
+            color: $nameColor;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 300;
+            color: $positionColor;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.5;
+            color: $text-social-i-Color
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        aside {
+            display: flex;
+        }
+
+        a {
+            font-size: 25px;
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $text-social-i-Color;
+        }
+
+        a:hover {
+            background-color: rgb(196, 52, 100);
+            color: white;
+        }
+    }
+
+    .features {
+        > aside {
+            height: 25vh;
+        }
+
+        > section {
+            justify-content: center;
+        }
+
+        > section > article {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+            text-align: center;
+        }
+
+        i {
+            font-size: 60px;
+            color: $text-social-i-Color;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        a {
+            padding: 3%;
+            width: 120px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        > section > article:nth-child(1) a {
+            background-color: #2a94c2;
+        }
+
+        > section > article:nth-child(2) a {
+            background-color: #329969;
+        }
+
+        > section > article:nth-child(3) a {
+            background-color: #983133;
+        }
+
+        > section > article:nth-child(1) a:hover {
+            background-color: #65cffc;
+            color: black;
+        }
+
+        > section > article:nth-child(2) a:hover {
+            background-color: #76f8bb;
+            color: black;
+        }
+
+        > section > article:nth-child(3) a:hover {
+            background-color: #f07577;
+            color: black;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+
+    .menu {
+        > section {
+            justify-content: center;
+        }
+
+        > section > article {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        > section > article > a {
+            padding: 2%;
+            border: 1px solid #329969;
+            width: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #329969;
+        }
+
+        a:hover {
+            background-color:  #329969;
+            color: white;
+        }
+
+        > section > figure {
+            width: 80%;
+        }
+
+        figure > img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 300;
+            color: #2a94c2;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #329969;
+        }
+
+        .avocado {
+            p > a {
+                color:#2a94c2;
+            }
+
+            h3 {
+                width: 100%;
+            }
+
+            figcaption {
+                align-items: flex-end;
+            }
+
+            figcaption > a {
+                padding: 2%;
+                border: 1px solid gray;
+                width: 120px;
+                text-align: center;
+                text-decoration: none;
+                color: gray;
+            }
+
+            figcaption > a:hover {
+                background-color: gray;
+                color: white;
+            }
+        }
+    }
+
+    .contact {
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 20px;
+            width: 100%;
+        }
+
+        input, textarea {
+            width: 95%;
+            padding: 2%;
+            border: 0px none transparent;
+            border-bottom: 1px solid gray;
+            font-size: 18px;
+        }
+
+        textarea {
+            height: 15vh;
+        }
+
+        [type=submit] {
+            padding: 2%;
+            width: 130px;
+            background-color: #329969;
+            color: white;
+        }
+
+        > section > article {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        > section > article > section {
+            display: flex;
+            justify-content: space-around;
+            column-gap: 5%;
+        }
+
+        > section > article > section > a {
+            display: flex;
+            column-gap: 10px;
+            text-decoration: none;
+            color: $text-social-i-Color;
+        }
+
+        > section > article > section i {
+            color: #329969;
+        }
+
+        > section > article > section > a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 300;
+            color: #329969;
+        }
+
+        div {
+            display: flex;
+            column-gap: 15px;
+        }
+
+        div a {
+            font-size: 25px;
+            color: $text-social-i-Color;
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $text-social-i-Color;
+        }
+
+        div a:hover {
+            background-color: rgb(196, 52, 100);
+            color: white;
+        }
+    }
+
+    .faq {
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        details {
+        width: 90%;
+        }
+
+        summary {
+        padding: 3%;
+        display: block;
+        border: 0.5px solid $sectionTitleColor;
+        border-radius: 3px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        }
+
+        h3 {
+            width: 80%;
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        i {
+            position: absolute;
+            color: $text-social-i-Color;
+            font-size: 40px;
+            right: 3%;
+            transform: rotate(0);
+            transition: .25s transform ease;
+        }
+
+        p {
+            padding: 3%;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        details[open] > summary {
+            color: $nameColor;
+        }
+
+        details[open] i {
+        transform: rotate(-90deg);
+        }
+    
+    }
+
+
+
 }
