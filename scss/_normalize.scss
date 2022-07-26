@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $defaultFontFamily;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url(/img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+}
+
+main > section, main > section > article  {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section > aside {
+    background-image: url(./img/features.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
