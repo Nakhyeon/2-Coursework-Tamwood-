@@ -17,12 +17,33 @@ body {
 }
 
 header {
-  background-image: url(../img/features.jpg);
+  background-image: url(../img/header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   width: 100%;
+}
+header aside {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+header aside > div:nth-child(1) {
+  border: 2px solid white;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+header aside > div:nth-child(2) {
+  border: 2px solid white;
+  background-color: white;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 0%;
 }
 
 main {
@@ -74,8 +95,8 @@ figure {
   display: flex;
   flex-wrap: wrap;
   row-gap: 15px;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
 }
 
 h1 {
@@ -89,6 +110,7 @@ h1 {
   header h1 {
     width: 60%;
     font-size: 35px;
+    line-height: 1.2;
   }
   header > section {
     width: 100%;
@@ -138,6 +160,8 @@ h1 {
   }
   img {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .sectiontitle h2 {
     text-transform: capitalize;
@@ -229,6 +253,13 @@ h1 {
     color: white;
     text-decoration: none;
     font-size: 18px;
+  }
+  .features > figure img {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .features > section > article:nth-child(1) a {
     background-color: #2a94c2;
@@ -333,6 +364,12 @@ h1 {
     background-color: gray;
     color: white;
   }
+  .contact {
+    width: 100%;
+  }
+  .contact > section {
+    width: 100%;
+  }
   .contact form {
     display: flex;
     flex-direction: column;
@@ -341,7 +378,7 @@ h1 {
     width: 100%;
   }
   .contact input, .contact textarea {
-    width: 95%;
+    width: 96%;
     padding: 2%;
     border: 0px none transparent;
     border-bottom: 1px solid gray;
@@ -355,6 +392,11 @@ h1 {
     width: 130px;
     background-color: #329969;
     color: white;
+    border: 1px solid #329969;
+  }
+  .contact [type=submit]:hover {
+    background-color: white;
+    color: #329969;
   }
   .contact > section > article {
     display: flex;
@@ -405,11 +447,15 @@ h1 {
     background-color: rgb(196, 52, 100);
     color: white;
   }
-  .faq section {
+  .faq {
+    width: 100%;
+  }
+  .faq > section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 30px;
   }
   .faq details {
     width: 90%;
@@ -417,12 +463,15 @@ h1 {
   .faq summary {
     padding: 3%;
     display: block;
-    border: 0.5px solid #309566;
+    border: 0.5px solid gray;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+  }
+  .faq summary:hover {
+    border: 0.5px solid black;
   }
   .faq h3 {
     width: 80%;
@@ -444,8 +493,155 @@ h1 {
   }
   .faq details[open] > summary {
     color: #2d98cd;
+    border: 0.5px solid black;
   }
   .faq details[open] i {
     transform: rotate(-90deg);
+  }
+}
+@media (min-width: 700px) {
+  main {
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+  }
+  header {
+    height: 45vh;
+  }
+  header > section {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  header > section > section {
+    padding: 2%;
+  }
+  header h1 {
+    width: 80%;
+    border: 1px;
+    font-size: 30px;
+  }
+  header nav {
+    width: 60%;
+    padding: 2%;
+  }
+  header nav > ul {
+    display: flex;
+    justify-content: space-between;
+    border: 1px;
+  }
+  header nav > ul > li {
+    display: flex;
+    text-align: center;
+  }
+  header nav > ul a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 17px;
+  }
+  header nav > ul a:hover {
+    text-decoration: underline;
+  }
+  header details {
+    display: none;
+  }
+  .sectiontitle p {
+    width: 80%;
+  }
+  .about img {
+    width: 25%;
+  }
+  .about figcaption {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .features > figure img {
+    width: 45%;
+  }
+  .features > figure figcaption {
+    width: 50%;
+  }
+  .features a {
+    padding: 2%;
+  }
+  .features > aside {
+    height: 300px;
+  }
+  .menu > section {
+    justify-content: left;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+  .menu > section > article {
+    width: 100%;
+  }
+  .menu > section > figure {
+    width: 30%;
+  }
+  .menu .avocado figure {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu .avocado img {
+    width: 50%;
+    height: 350px;
+  }
+  .menu .avocado figcaption {
+    width: 45%;
+  }
+  .menu > section > article > a {
+    padding: 1%;
+    width: 130px;
+  }
+  .contact > section {
+    justify-content: space-between;
+  }
+  .contact > section > form {
+    width: 45%;
+  }
+  .contact > section > article {
+    width: 45%;
+  }
+  .faq {
+    width: 100%;
+  }
+  .faq details {
+    width: 80%;
+  }
+  .faq summary {
+    padding: 2%;
+  }
+}
+@media (min-width: 1000px) {
+  header h1 {
+    width: 100%;
+    border: 1px;
+    font-size: 35px;
+  }
+  header nav {
+    width: 40%;
+    padding: 2%;
+  }
+  .about > section {
+    justify-content: space-between;
+  }
+  .about figure {
+    width: 48%;
+  }
+  .about img {
+    width: 35%;
+  }
+  .about figcaption {
+    width: 60%;
+  }
+  .features > section {
+    justify-content: space-around;
+  }
+  .features > section > article {
+    width: 30%;
+  }
+  .menu > section > figure {
+    width: 20%;
   }
 }/*# sourceMappingURL=style.css.map */

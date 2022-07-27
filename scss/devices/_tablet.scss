@@ -1,0 +1,160 @@
+@media (min-width:700px) {
+    main {
+        padding-top: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+    }
+
+    
+    header {
+        height: 45vh;
+        
+        > section {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        > section > section {
+            padding: 2%;
+        }
+
+        h1 {
+            width: 80%;
+            border: 1px;
+            font-size: 30px;
+        }
+
+        nav {
+            width: 60%;
+            padding: 2%;
+        }
+
+        nav > ul {
+            display: flex;
+            justify-content: space-between;
+            border: 1px 
+        }
+
+        nav > ul > li {
+            display: flex;
+            text-align: center;
+        }
+
+        nav > ul a {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+            font-size: 17px;
+        }
+
+        nav > ul a:hover {
+            text-decoration: underline;
+            }
+
+        details {
+            display: none;
+        }
+    }
+
+    .sectiontitle {
+        p {
+            width: 80%;
+        }
+    }
+
+    .about {
+
+        img {
+            width: 25%;
+        }
+
+        figcaption {
+            width: 70%;
+            justify-content: space-between;
+        }
+    }
+
+    .features {
+        > figure {
+            img {
+                width: 45%;
+            }
+
+            figcaption {
+                width: 50%;
+            }
+        }
+
+        a {
+            padding: 2%;
+        }
+
+        > aside {
+            height: 300px;
+        }
+
+    }
+
+    .menu {
+        > section {
+            justify-content: left;
+            column-gap: 5%;
+        }
+
+        > section > article {
+            width: 100%;
+        }
+
+        > section > figure {
+            width: 30%;
+        }
+
+        .avocado {
+            figure {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            img {
+                width: 50%;
+                height: 350px;
+            }
+
+            figcaption {
+                width: 45%;
+            }
+        }
+
+        > section > article > a {
+            padding: 1%;
+            width: 130px;
+        }
+    }
+
+
+    .contact {
+        > section {
+            justify-content: space-between;
+        }
+
+        > section > form {
+            width: 45%;
+        }
+
+        > section > article {
+            width: 45%;
+        }
+    }
+
+    .faq {
+        width: 100%;
+
+        details {
+            width: 80%;
+        }
+
+        summary {
+            padding: 2%;  
+        }
+    }
+}

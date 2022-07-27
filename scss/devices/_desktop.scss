@@ -1,0 +1,51 @@
+@media (min-width:1000px) {
+    header {
+        h1 {
+            width: 100%;
+            border: 1px;
+            font-size: 35px;
+        }
+
+        nav {
+            width: 40%;
+            padding: 2%;
+        }
+    }
+
+    .about {
+        > section {
+            justify-content: space-between;
+        }
+
+        figure {
+            width: 48%;
+        }
+
+        img {
+            width: 35%;
+        }
+
+        figcaption {
+            width: 60%;
+        }
+    }
+
+    .features {
+        > section {
+        justify-content: space-around;
+        }
+
+        > section > article {
+            width: 30%;
+        }
+    }
+
+    .menu {
+        > section > figure {
+            width: 20%;
+        }
+    }
+
+
+
+}
